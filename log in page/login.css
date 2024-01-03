@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(195, 45, 95);
+
+}
+.container{
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px 20px;
+  max-width: 350px;
+  width: 100%;
+}
+.container form .title{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px ;
+    position: relative;
+}
+.container form .title::before{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 30px;
+    bottom: 4px;
+    left:0 ;
+    border-radius: 5px;
+    background-color: black;
+
+}
+.container form .input-box{
+
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+position: relative;   
+
+
+}
+.container form .input-box input{
+width: 100%;
+height: 100%;
+outline: none;
+border: none;
+font-size: 16px;
+
+}
+.container form .underline:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    left:0;
+    bottom: 0;
+    background: #ccc;
+
+
+}
+.container form .underline:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    left:0;
+    bottom: 0;
+    background: blue;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0s 0.5s ease;
+    
+}
+.container form .input-box input:focus ~.underline:after,.container form .input-box input:valid ~.underline:after{
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+.button{margin:20px 0 20px  ;
+
+}
+input[type=submit]{
+    background-color: rgb(195, 45, 95) ;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+input[type=submit]:hover{
+    background-color: tomato;
+    color: black;
+}
+.option{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.twitter a,.fb a{
+
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+    padding-top: 10px;
+    align-items: center;
+
+    
+}
+.twitter{
+    background-color: rgb(101, 193, 229);
+    margin:10px 0 15px 0 ;
+    
+    
+}
+.fb{
+    background-color: rgb(30, 30, 237);
+    margin: 10px 0 50px 0;
+}
+
+.twitter i,.fb i{
+padding-right: 10px ;
+}
+
+.fb:hover{
+    
+    background-color:black;
+
+
+}
+.twitter:hover{
+    background-color: orange;
+}
+
+.fb:active{
+    background-color: red;
+}
+
+.twitter:active{
+
+    background-color: lawngreen;
+    
+}

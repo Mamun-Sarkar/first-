@@ -1,0 +1,44 @@
+.border{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    
+    
+}
+.div-1{
+    
+    position: relative;
+    margin-top: 250px;
+}
+
+.h{
+    background-color:khaki;
+    margin: 10px;
+}
+.b{
+    background-color:aqua;
+    margin-top: 10px;
+}
+
+.a{
+    height: 100px;
+    margin-top: 10px;
+    background-color: brown;
+}
+  
+.o{
+    height: 200px;
+    width: 200px;
+    
+}
+.height{
+    height: 300px;
+}
+.m{
+    margin-top: 600px;
+}
+.img2{
+    height: 600px;
+    
+}
+
